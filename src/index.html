@@ -12,82 +12,86 @@
 		<title>Gallery</title>
 	</head>
 	<body>
-		<div class="container-xl">
-			<header
-				class="row align-items-center justify-content-center justify-content-lg-start"
-			>
-				<nav class="col-4">
-					<ul
-						class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-start mb-md-0"
-					>
-						<li class="me-2">
-							<a
-								href="#"
-								class="nav-link py-4 px-0 me-4 fw-bold border-bottom border-2 border-primary link-dark header-link"
-							>
-								Photos
-							</a>
-						</li>
-						<li class="me-2">
-							<a
-								href="#"
-								class="nav-link py-4 px-0 me-4 link-secondary header-link"
-								>Videos</a
-							>
-						</li>
-						<li>
-							<a
-								href="#"
-								class="nav-link py-4 px-0 link-secondary header-link"
-								>Podcasts</a
-							>
-						</li>
-					</ul>
-				</nav>
-				<form class="col-6">
-					<div class="input-group rounded-5">
-						<span
-							class="input-group-text bg-light rounded-max border-0"
+		<header class="border-bottom header">
+			<div class="container-xl">
+				<div
+					class="row align-items-center justify-content-center justify-content-lg-start"
+				>
+					<nav class="col-4">
+						<ul
+							class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-start mb-md-0"
 						>
-							<svg
-								width="19"
-								height="19"
-								viewBox="0 0 19 19"
-								fill="none"
-								xmlns="http://www.w3.org/2000/svg"
+							<li class="me-2">
+								<a
+									href="#"
+									class="nav-link py-4 px-0 me-4 fw-bold border-bottom border-2 border-primary link-dark header-link"
+								>
+									Photos
+								</a>
+							</li>
+							<li class="me-2">
+								<a
+									href="#"
+									class="nav-link py-4 px-0 me-4 link-secondary header-link"
+									>Videos</a
+								>
+							</li>
+							<li>
+								<a
+									href="#"
+									class="nav-link py-4 px-0 link-secondary header-link"
+									>Podcasts</a
+								>
+							</li>
+						</ul>
+					</nav>
+					<form class="col-6">
+						<div class="input-group rounded-5">
+							<span
+								class="input-group-text bg-light rounded-max border-0"
 							>
-								<path
-									d="M17 17L13.05 13.05M15 8C15 11.866 11.866 15 8 15C4.13401 15 1 11.866 1 8C1 4.13401 4.13401 1 8 1C11.866 1 15 4.13401 15 8Z"
-									stroke="#666666"
-									stroke-width="2"
-									stroke-linecap="square"
-								/>
-							</svg>
-						</span>
-						<input
-							class="form-control border-0 rounded-max search-input bg-light text-dark"
-							type="search"
-							placeholder="Search for anything..."
-							aria-label="Search"
-						/>
+								<svg
+									width="19"
+									height="19"
+									viewBox="0 0 19 19"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M17 17L13.05 13.05M15 8C15 11.866 11.866 15 8 15C4.13401 15 1 11.866 1 8C1 4.13401 4.13401 1 8 1C11.866 1 15 4.13401 15 8Z"
+										stroke="#666666"
+										stroke-width="2"
+										stroke-linecap="square"
+									/>
+								</svg>
+							</span>
+							<input
+								class="form-control border-0 rounded-max search-input bg-light text-dark"
+								type="search"
+								placeholder="Search for anything..."
+								aria-label="Search"
+							/>
+						</div>
+					</form>
+					<div class="col-2 d-flex flex-nowrap align-items-center">
+						<select class="form-select border-0 col text-secondary">
+							<option selected value="en">English</option>
+							<option value="ua">Українська</option>
+						</select>
+						<a
+							href="#"
+							class="col-6 text-end nav-link link-secondary header-link"
+							>Sign in</a
+						>
 					</div>
-				</form>
-				<div class="col-2 d-flex flex-nowrap align-items-center">
-					<select class="form-select border-0 col text-secondary">
-						<option selected value="en">English</option>
-						<option value="ua">Українська</option>
-					</select>
-					<a
-						href="#"
-						class="col-6 text-end nav-link link-secondary header-link"
-						>Sign in</a
-					>
 				</div>
-			</header>
-			<nav>
-				<ul>
-					<li>
-						<a href="/">
+			</div>
+		</header>
+		<main class="row">
+			<nav class="col-3">
+				<ul class="nav nav-pills flex-column">
+					<li class="nav-item">
+						<a class="nav-link active" href="#">
 							<svg
 								width="18"
 								height="18"
@@ -135,8 +139,8 @@
 							Selfies
 						</a>
 					</li>
-					<li>
-						<a href="/">
+					<li class="nav-item">
+						<a class="nav-link" href="/">
 							<svg
 								width="20"
 								height="20"
@@ -154,8 +158,8 @@
 							Podcasts
 						</a>
 					</li>
-					<li>
-						<a href="/">
+					<li class="nav-item">
+						<a class="nav-link" href="/">
 							<svg
 								width="20"
 								height="20"
@@ -173,9 +177,8 @@
 					</li>
 				</ul>
 			</nav>
-
-			<main>
-				<section>
+			<article class="col-8">
+				<div>
 					<h1>All photos</h1>
 					<div>
 						<input type="radio" name="newest" id="newest" checked />
@@ -184,43 +187,39 @@
 						<label for="latest">Latest</label>
 					</div>
 					<span>150 items</span>
+				</div>
+				<section>
+					<img src="../thumbnail.png" />
+					<div>
+						<h5>Heading</h5>
+						<p>
+							Some quick example text to build on the card title
+							and make up the bulk of the card's content.
+						</p>
+						<a href="#">Show more...</a>
+						<div>
+							<a href="#">Save to collection</a>
+							<a href="#">Share</a>
+						</div>
+					</div>
 				</section>
-				<article>
-					<section>
-						<img src="../thumbnail.png" />
+				<section>
+					<img src="../thumbnail.png" />
+					<div>
+						<h5>Heading</h5>
+						<p>
+							Some quick example text to build on the card title
+							and make up the bulk of the card's content.
+						</p>
+						<a href="#">Show more...</a>
 						<div>
-							<h5>Heading</h5>
-							<p>
-								Some quick example text to build on the card
-								title and make up the bulk of the card's
-								content.
-							</p>
-							<a href="#">Show more...</a>
-							<div>
-								<a href="#">Save to collection</a>
-								<a href="#">Share</a>
-							</div>
+							<a href="#">Save to collection</a>
+							<a href="#">Share</a>
 						</div>
-					</section>
-					<section>
-						<img src="../thumbnail.png" />
-						<div>
-							<h5>Heading</h5>
-							<p>
-								Some quick example text to build on the card
-								title and make up the bulk of the card's
-								content.
-							</p>
-							<a href="#">Show more...</a>
-							<div>
-								<a href="#">Save to collection</a>
-								<a href="#">Share</a>
-							</div>
-						</div>
-					</section>
-				</article>
-			</main>
-		</div>
+					</div>
+				</section>
+			</article>
+		</main>
 
 		<script src="./script.js"></script>
 	</body>
