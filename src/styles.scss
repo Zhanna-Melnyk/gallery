@@ -40,3 +40,48 @@ $dark: #292929;
 .mt-6 {
 	margin-top: 56px;
 }
+
+.main {
+	.max-content {
+		height: max-content;
+		width: max-content;
+	}
+
+	.border-grey {
+		border-color: $gray-200 !important;
+	}
+
+	.border-middle-width {
+		border-width: 2px;
+	}
+
+	.toggle:hover {
+		background-color: $primary !important;
+		border: 2px solid $primary !important;
+	}
+
+	.fs-small {
+		font-size: 14px;
+		line-height: 21px;
+	}
+
+	.text-truncate-custom {
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: 2;
+		white-space: normal;
+	}
+
+	.show-more-btn {
+		border: none;
+
+		&:hover {
+			color: $primary !important;
+		}
+	}
+
+	.share-btn:hover {
+		background-color: $gray-200;
+        color: $dark;
+	}
+}

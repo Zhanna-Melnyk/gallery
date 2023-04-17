@@ -87,7 +87,7 @@
 				</div>
 			</div>
 		</header>
-		<main class="container-xl mt-6">
+		<main class="container-xl mt-6 main">
 			<div class="row d-flex justify-content-between">
 				<nav class="col-3">
 					<ul class="nav nav-pills flex-column fw-bold">
@@ -102,7 +102,7 @@
 									viewBox="0 0 24 24"
 									fill="none"
 									xmlns="http://www.w3.org/2000/svg"
-                                    class="me-2"
+									class="me-2"
 								>
 									<path
 										d="M15 6.5C13.6193 6.5 12.5 7.61929 12.5 9C12.5 10.3807 13.6193 11.5 15 11.5C16.3807 11.5 17.5 10.3807 17.5 9C17.5 7.61929 16.3807 6.5 15 6.5Z"
@@ -129,7 +129,7 @@
 									viewBox="0 0 24 24"
 									fill="none"
 									xmlns="http://www.w3.org/2000/svg"
-                                    class="me-2"
+									class="me-2"
 								>
 									<path
 										d="M17.5 12C17.5 15.0376 15.0376 17.5 12 17.5C8.96243 17.5 6.5 15.0376 6.5 12M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
@@ -159,7 +159,7 @@
 									viewBox="0 0 24 24"
 									fill="none"
 									xmlns="http://www.w3.org/2000/svg"
-                                    class="me-2"
+									class="me-2"
 								>
 									<path
 										d="M12 8V12L14.5 14.5M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
@@ -182,7 +182,7 @@
 									viewBox="0 0 24 24"
 									fill="none"
 									xmlns="http://www.w3.org/2000/svg"
-                                    class="me-2"
+									class="me-2"
 								>
 									<path
 										d="M6 21L5.00221 21.0665L5.06445 22H6V21ZM18 21V22H18.9356L18.9978 21.0665L18 21ZM3 5H2V7H3V5ZM21 7H22V5H21V7ZM11 11V10H9V11H11ZM9 16V17H11V16H9ZM15 11V10H13V11H15ZM13 16V17H15V16H13ZM4.00221 6.06652L5.00221 21.0665L6.99779 20.9335L5.99779 5.93348L4.00221 6.06652ZM6 22H18V20H6V22ZM18.9978 21.0665L19.9978 6.06652L18.0022 5.93348L17.0022 20.9335L18.9978 21.0665ZM19 5H5V7H19V5ZM3 7H5V5H3V7ZM19 7H21V5H19V7ZM9 11V16H11V11H9ZM13 11V16H15V11H13ZM12 4C13.3965 4 14.5725 4.95512 14.9055 6.24926L16.8424 5.75074C16.2874 3.59442 14.3312 2 12 2V4ZM9.09445 6.24926C9.42754 4.95512 10.6035 4 12 4V2C9.66883 2 7.71258 3.59442 7.15758 5.75074L9.09445 6.24926Z"
@@ -194,58 +194,168 @@
 						</li>
 					</ul>
 				</nav>
-				<article class="col-8">
-					<div>
-						<h1>All photos</h1>
-						<div>
+				<div class="col-8">
+					<div
+						class="row d-flex justify-content-between align-items-center"
+					>
+						<h1 class="col mb-1">All photos</h1>
+						<div
+							class="btn-group col-3 text-end max-content"
+							role="group"
+							aria-label="sorting"
+						>
 							<input
 								type="radio"
+								class="btn-check"
 								name="newest"
 								id="newest"
 								checked
 							/>
-							<label for="newest">Newest</label>
-							<input type="radio" name="latest" id="latest" />
-							<label for="latest">Latest</label>
+							<label
+								class="btn btn-outline-primary max-content bg-dark text-white border-dark fw-bold px-4 py-2 toggle"
+								for="newest"
+							>
+								Newest
+							</label>
+							<input
+								type="radio"
+								class="btn-check"
+								name="latest"
+								id="latest"
+							/>
+							<label
+								class="btn btn-outline-primary max-content text-dark border-grey fw-bold px-4 py-2 toggle border-middle-width"
+								for="latest"
+							>
+								Latest
+							</label>
 						</div>
-						<span>150 items</span>
+						<span class="fw-bold fs-small text-secondary mb-3"
+							>150 items</span
+						>
 					</div>
-					<section>
-						<img src="../thumbnail.png" />
-						<div>
-							<h5>Heading</h5>
-							<p>
-								Some quick example text to build on the card
-								title and make up the bulk of the card's
-								content.
-							</p>
-							<a href="#">Show more...</a>
-							<div>
-								<a href="#">Save to collection</a>
-								<a href="#">Share</a>
+					<article class="row row-cols-1 row-cols-md-2 g-4 mt-4">
+						<section class="col">
+							<div class="card border-grey">
+								<img
+									src="../thumbnail.png"
+									alt="card-image"
+									class="card-img-top"
+								/>
+								<div class="card-body">
+									<h4 class="card-title fw-bold">Heading</h4>
+									<p
+										class="text-truncate text-truncate-custom mb-2"
+										id="truncated"
+									>
+										Some quick example text to build on the
+										card title and make up the bulk of the
+										card's content.
+									</p>
+									<button
+										class="btn bg-white text-dark p-0 lh-1 show-more-btn"
+									>
+										Show more...
+									</button>
+								</div>
+								<div class="card-footer bg-white border-grey">
+									<a
+										href="#"
+										class="btn btn-primary text-white fw-bold me-3"
+									>
+										Save to collection
+									</a>
+									<a
+										href="#"
+										class="btn btn-outline-dark fw-bold border-grey border-middle-width share-btn"
+									>
+										Share
+									</a>
+								</div>
 							</div>
-						</div>
-					</section>
-					<section>
-						<img src="../thumbnail.png" />
-						<div>
-							<h5>Heading</h5>
-							<p>
-								Some quick example text to build on the card
-								title and make up the bulk of the card's
-								content.
-							</p>
-							<a href="#">Show more...</a>
-							<div>
-								<a href="#">Save to collection</a>
-								<a href="#">Share</a>
+						</section>
+						<section class="col">
+							<div class="card border-grey">
+								<img
+									src="../thumbnail.png"
+									alt="card-image"
+									class="card-img-top"
+								/>
+								<div class="card-body">
+									<h4 class="card-title fw-bold">Heading</h4>
+									<p
+										class="text-truncate text-truncate-custom mb-2"
+										id="truncated"
+									>
+										Some quick example text to build on the
+										card title and make up the bulk of the
+										card's content.
+									</p>
+									<button
+										class="btn bg-white text-dark p-0 lh-1 show-more-btn"
+									>
+										Show more...
+									</button>
+								</div>
+								<div class="card-footer bg-white border-grey">
+									<a
+										href="#"
+										class="btn btn-primary text-white fw-bold me-3"
+									>
+										Save to collection
+									</a>
+									<a
+										href="#"
+										class="btn btn-outline-dark fw-bold border-grey border-middle-width share-btn"
+									>
+										Share
+									</a>
+								</div>
 							</div>
-						</div>
-					</section>
-				</article>
+						</section>
+						<section class="col">
+							<div class="card border-grey">
+								<img
+									src="../thumbnail.png"
+									alt="card-image"
+									class="card-img-top"
+								/>
+								<div class="card-body">
+									<h4 class="card-title fw-bold">Heading</h4>
+									<p
+										class="text-truncate text-truncate-custom mb-2"
+										id="truncated"
+									>
+										Some quick example text to build on the
+										card title and make up the bulk of the
+										card's content.
+									</p>
+									<button
+										class="btn bg-white text-dark p-0 lh-1 show-more-btn"
+									>
+										Show more...
+									</button>
+								</div>
+								<div class="card-footer bg-white border-grey">
+									<a
+										href="#"
+										class="btn btn-primary text-white fw-bold me-3"
+									>
+										Save to collection
+									</a>
+									<a
+										href="#"
+										class="btn btn-outline-dark fw-bold border-grey border-middle-width share-btn"
+									>
+										Share
+									</a>
+								</div>
+							</div>
+						</section>
+					</article>
+				</div>
 			</div>
 		</main>
-
 		<script src="./script.js"></script>
 	</body>
 </html>

@@ -10844,3 +10844,40 @@ textarea.form-control-lg {
 .mt-6 {
   margin-top: 56px;
 }
+
+.main .max-content {
+  height: -moz-max-content;
+  height: max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+.main .border-grey {
+  border-color: #ebebeb !important;
+}
+.main .border-middle-width {
+  border-width: 2px;
+}
+.main .toggle:hover {
+  background-color: #ed7135 !important;
+  border: 2px solid #ed7135 !important;
+}
+.main .fs-small {
+  font-size: 14px;
+  line-height: 21px;
+}
+.main .text-truncate-custom {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  white-space: normal;
+}
+.main .show-more-btn {
+  border: none;
+}
+.main .show-more-btn:hover {
+  color: #ed7135 !important;
+}
+.main .share-btn:hover {
+  background-color: #ebebeb;
+  color: #292929;
+}
