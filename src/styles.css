@@ -10833,7 +10833,12 @@ textarea.form-control-lg {
 .header .input-group > .form-control:focus {
   box-shadow: none !important;
 }
-.header .search-input {
+.header .search-container {
+  width: auto;
+  max-width: 546px;
+  margin-left: 85px;
+}
+.header .search-container .search-input {
   border-left: 0;
   padding-left: 0;
 }
@@ -10856,6 +10861,16 @@ textarea.form-control-lg {
 }
 .main .border-middle-width {
   border-width: 2px;
+}
+.main .aside-navs:hover {
+  background-color: #ed7135;
+  color: white !important;
+}
+.main .aside-navs:hover svg .changable-stroke {
+  stroke: white;
+}
+.main .aside-navs:hover svg .changable-fill {
+  fill: white;
 }
 .main .toggle:hover {
   background-color: #ed7135 !important;
@@ -10880,4 +10895,13 @@ textarea.form-control-lg {
 .main .share-btn:hover {
   background-color: #ebebeb;
   color: #292929;
+}
+
+@media screen and (max-width: 576px) {
+  .search-form {
+    padding: 0;
+  }
+  .search-form .search-container {
+    margin-left: auto !important;
+  }
 }
