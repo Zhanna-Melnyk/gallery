@@ -10845,6 +10845,9 @@ textarea.form-control-lg {
 .header .form-select {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23666666' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
 }
+.header .form-select:hover {
+  cursor: pointer;
+}
 
 .mt-6 {
   margin-top: 56px;
@@ -10886,10 +10889,10 @@ textarea.form-control-lg {
   -webkit-line-clamp: 2;
   white-space: normal;
 }
-.main .show-more-btn {
+.main .show-btn {
   border: none;
 }
-.main .show-more-btn:hover {
+.main .show-btn:hover {
   color: #ed7135 !important;
 }
 .main .share-btn:hover {

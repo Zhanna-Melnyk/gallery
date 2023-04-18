@@ -40,6 +40,10 @@ $dark: #292929;
 
 	.form-select {
 		background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23666666' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+
+        &:hover {
+            cursor: pointer;
+        }
 	}
 }
 
@@ -61,19 +65,19 @@ $dark: #292929;
 		border-width: 2px;
 	}
 
-    .aside-navs:hover {
-        background-color: $primary;
-        color: white !important;
+	.aside-navs:hover {
+		background-color: $primary;
+		color: white !important;
 
-        svg {
-            .changable-stroke {
-                stroke: white;
-            }
-            .changable-fill{
-                fill: white;
-            }
-        }
-    }
+		svg {
+			.changable-stroke {
+				stroke: white;
+			}
+			.changable-fill {
+				fill: white;
+			}
+		}
+	}
 
 	.toggle:hover {
 		background-color: $primary !important;
@@ -92,7 +96,7 @@ $dark: #292929;
 		white-space: normal;
 	}
 
-	.show-more-btn {
+	.show-btn {
 		border: none;
 
 		&:hover {
