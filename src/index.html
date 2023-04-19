@@ -13,7 +13,7 @@
 	</head>
 	<body>
 		<header
-			class="border-bottom header justify-content-lg-between d-flex flex-nowrap"
+			class="d-flex flex-nowrap justify-content-lg-between border-bottom header"
 		>
 			<div
 				class="container-xl navbar navbar-expand-md navbar-light bg-white col-12"
@@ -30,21 +30,21 @@
 					>
 						<span class="navbar-toggler-icon"></span>
 					</button>
-					<div class="col-auto d-flex flex-nowrap align-items-center">
+					<div class="d-flex flex-nowrap align-items-center col-auto">
 						<select
-							class="form-select border-0 text-secondary mx-lg-3 text-center"
+							class="form-select text-secondary text-center mx-lg-3 border-0 "
 						>
 							<option selected value="en">English</option>
 							<option value="ua">Українська</option>
 						</select>
 						<a
 							href="#"
-							class="text-end nav-link link-secondary header-link col-auto mx-lg-3"
+							class="nav-link link-secondary text-end col-auto mx-lg-3 header-link"
 						>
 							Sign in
 						</a>
 						<div
-							class="form-check form-switch col-auto ms-2 d-flex flex-column p-0 align-items-center mode-toggle ms-lg-3"
+							class="form-check form-switch d-flex flex-column align-items-center col-auto ms-2 p-0 ms-lg-3 mode-toggle"
 						>
 							<input
 								class="form-check-input m-0 mb-1"
@@ -65,14 +65,14 @@
 						class="collapse navbar-collapse justify-content-evenly justify-content-md-between align-items-center row col-md-auto"
 						id="navbarTogglerDemo01"
 					>
-						<nav class="col-12 col-md-5 col-md-4 justify-content-evenly">
+						<nav class="justify-content-evenly col-12 col-md-5 col-md-4">
 							<ul
-								class="navbar-nav mb-2 mb-sm-0 justify-content-evenly justify-content-md-start d-flex flex-row"
+								class="navbar-nav d-flex flex-row justify-content-evenly justify-content-md-start mb-2 mb-sm-0"
 							>
 								<li class="nav-item me-2">
 									<a
 										href="#"
-										class="nav-link py-2 py-md-4 px-0 me-2 me-lg-4 fw-bold border-bottom border-2 border-primary link-dark header-link"
+										class="nav-link fw-bold link-dark me-2 me-lg-4 py-2 py-md-4 px-0 border-bottom border-2 border-primary header-link"
 									>
 										Photos
 									</a>
@@ -80,7 +80,7 @@
 								<li class="nav-item me-2">
 									<a
 										href="#"
-										class="nav-link py-2 py-md-4 px-0 me-2 me-lg-4 link-secondary header-link"
+										class="nav-link link-secondary me-2 me-lg-4 py-2 py-md-4 px-0 header-link"
 									>
 										Videos
 									</a>
@@ -88,7 +88,7 @@
 								<li class="nav-item">
 									<a
 										href="#"
-										class="nav-link py-2 py-md-4 px-0 link-secondary header-link"
+										class="nav-link link-secondary py-2 py-md-4 px-0 header-link"
 									>
 										Podcasts
 									</a>
@@ -96,7 +96,7 @@
 							</ul>
 						</nav>
 						<form
-							class="col-7 mx-sm-0 mt-3 mt-sm-2 mb-2 ps-0 text-start search-form d-flex justify-content-end"
+							class="d-flex justify-content-end text-start col-7 mx-sm-0 mt-3 mt-sm-2 mb-2 ps-0 search-form "
 						>
 							<div class="input-group rounded-5 search-container">
 								<span
@@ -118,7 +118,7 @@
 									</svg>
 								</span>
 								<input
-									class="form-control border-0 rounded-max search-input bg-light text-dark"
+									class="form-control bg-light text-dark border-0 rounded-max search-input"
 									type="search"
 									placeholder="Search for anything..."
 									aria-label="Search"
@@ -130,10 +130,10 @@
 			</div>
 		</header>
 		<main class="container-xl mt-6 main">
-			<div class="row d-flex justify-content-between">
+			<div class="d-flex justify-content-between row">
 				<nav class="col-12 col-md-3">
 					<ul
-						class="nav nav-pills flex-row flex-md-column fw-bold justify-content-evenly mb-3"
+						class="nav nav-pills flex-row flex-md-column justify-content-evenly fw-bold mb-3"
 					>
 						<li class="nav-item mb-1 mb-md-0">
 							<a
@@ -245,11 +245,11 @@
 				</nav>
 				<div class="col-12 col-md-8">
 					<div
-						class="row d-flex justify-content-between align-items-center"
+						class="d-flex justify-content-between align-items-center row"
 					>
 						<h1 class="col mb-1">All photos</h1>
 						<div
-							class="btn-group col-3 text-end max-content"
+							class="btn-group text-end col-3 max-content"
 							role="group"
 							aria-label="sorting"
 						>
@@ -261,7 +261,7 @@
 								checked
 							/>
 							<label
-								class="btn btn-outline-primary max-content bg-dark text-white border-dark fw-bold px-4 py-2 toggle active-toggle border-middle-width"
+								class="btn btn-outline-primary bg-dark text-white fw-bold border-dark px-4 py-2 toggle border-middle-width max-content"
 								for="newest"
 							>
 								Newest
@@ -273,7 +273,7 @@
 								id="latest"
 							/>
 							<label
-								class="btn btn-outline-primary max-content text-dark border-grey fw-bold px-4 py-2 toggle border-middle-width"
+								class="btn btn-outline-primary text-dark fw-bold px-4 py-2 toggle border-middle-width max-content border-grey"
 								for="latest"
 							>
 								Latest
