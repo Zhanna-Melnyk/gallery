@@ -12070,8 +12070,8 @@ textarea.form-control-lg {
   max-width: 560px;
 }
 .header .search-container .search-input {
-  border-left: 0;
   padding-left: 0;
+  border-left: 0;
 }
 .header .form-select {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23666666' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
@@ -12089,10 +12089,10 @@ textarea.form-control-lg {
 }
 
 .main .max-content {
-  height: -moz-max-content;
-  height: max-content;
   width: -moz-max-content;
   width: max-content;
+  height: -moz-max-content;
+  height: max-content;
 }
 .main .border-grey {
   border-color: #ebebeb !important;

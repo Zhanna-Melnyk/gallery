@@ -42,12 +42,12 @@ const createCardView = (data) => {
 	saveBtn.innerText = 'Save to collection';
 
 	const shareBtn = document.createElement('a');
-	shareBtn.className = 'btn btn-outline-dark fw-bold border-grey border-middle-width share-btn mt-1';
+	shareBtn.className = 'btn btn-outline-dark fw-bold mt-1 share-btn border-middle-width border-grey ';
 	shareBtn.href = '#';
 	shareBtn.innerText = 'Share';
 
 	const cardFooter = document.createElement('div');
-	cardFooter.className = 'card-footer bg-white border-grey pt-1';
+	cardFooter.className = 'card-footer bg-white pt-1 border-grey';
 
 	const card = document.createElement('div');
 	card.className = 'card border-grey';
