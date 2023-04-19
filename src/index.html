@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="light">
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -13,10 +13,10 @@
 	</head>
 	<body>
 		<header
-			class="border-bottom header justify-content-md-between d-flex flex-nowrap"
+			class="border-bottom header justify-content-lg-between d-flex flex-nowrap"
 		>
 			<div
-				class="container-lg navbar navbar-expand-md navbar-light bg-white col-12"
+				class="container-xl navbar navbar-expand-md navbar-light bg-white col-12"
 			>
 				<div class="container-fluid flex-md-row-reverse">
 					<button
@@ -39,18 +39,35 @@
 						</select>
 						<a
 							href="#"
-							class="text-end nav-link link-secondary header-link col-auto ms-lg-3"
+							class="text-end nav-link link-secondary header-link col-auto mx-lg-3"
 						>
 							Sign in
 						</a>
+						<div
+							class="form-check form-switch col-auto ms-2 d-flex flex-column p-0 align-items-center mode-toggle ms-lg-3"
+						>
+							<input
+								class="form-check-input m-0 mb-1"
+								type="checkbox"
+								role="switch"
+								id="dark-mode-switch"
+                                aria-checked="false"
+							/>
+							<label
+								class="form-check-label text-center text-secondary"
+								for="dark-mode-switch"
+							>
+								Dark mode
+							</label>
+						</div>
 					</div>
 					<div
-						class="collapse navbar-collapse justify-content-md-between align-items-center row col-md-auto"
+						class="collapse navbar-collapse justify-content-evenly justify-content-md-between align-items-center row col-md-auto"
 						id="navbarTogglerDemo01"
 					>
-						<nav class="col-12 col-sm-6 col-md-4">
+						<nav class="col-12 col-md-5 col-md-4 justify-content-evenly">
 							<ul
-								class="navbar-nav mb-2 mb-sm-0 justify-content-evenly justify-content-sm-start d-flex flex-row"
+								class="navbar-nav mb-2 mb-sm-0 justify-content-evenly justify-content-md-start d-flex flex-row"
 							>
 								<li class="nav-item me-2">
 									<a
@@ -79,7 +96,7 @@
 							</ul>
 						</nav>
 						<form
-							class="col-8 mx-auto mx-sm-0 mt-3 mt-sm-2 mb-2 ps-0 text-start search-form"
+							class="col-7 mx-sm-0 mt-3 mt-sm-2 mb-2 ps-0 text-start search-form d-flex justify-content-end"
 						>
 							<div class="input-group rounded-5 search-container">
 								<span
@@ -244,7 +261,7 @@
 								checked
 							/>
 							<label
-								class="btn btn-outline-primary max-content bg-dark text-white border-dark fw-bold px-4 py-2 toggle border-middle-width"
+								class="btn btn-outline-primary max-content bg-dark text-white border-dark fw-bold px-4 py-2 toggle active-toggle border-middle-width"
 								for="newest"
 							>
 								Newest

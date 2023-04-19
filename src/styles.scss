@@ -4,6 +4,39 @@ $gray-100: #eeeeee;
 $gray-200: #ebebeb;
 $dark: #292929;
 
+[data-bs-theme="dark"] {
+    --bs-white-rgb: $dark !important;
+    --bs-secondary-rgb: $gray-100 !important;
+    --bs-dark-rgb: $gray-200 !important;
+    --bs-light-rgb: $dark !important;
+
+    .bg-dark {
+        background-color: rgba($primary, var(--bs-bg-opacity)) !important;
+    }
+
+    .border-dark {
+        border-color: rgba($primary, var(--bs-border-opacity)) !important;
+    }
+
+    .text-white {
+        color: rgba(white, var(--bs-text-opacity)) !important;
+    }
+
+    .share-btn {
+        background-color: $gray-200;
+        color: $dark;
+
+        &:hover {
+            background-color: $secondary !important;
+            border-color: $secondary !important;
+        }
+    }
+
+    .toggle:hover {
+        color: white !important;
+    }
+}
+
 @import '../node_modules/bootstrap/scss/bootstrap';
 
 .header {
@@ -28,9 +61,7 @@ $dark: #292929;
 	}
 
 	.search-container {
-		width: auto;
-		max-width: 546px;
-		margin-left: 85px;
+		max-width: 560px;
 
 		.search-input {
 			border-left: 0;
@@ -41,10 +72,14 @@ $dark: #292929;
 	.form-select {
 		background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23666666' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
 
-        &:hover {
-            cursor: pointer;
-        }
+		&:hover {
+			cursor: pointer;
+		}
 	}
+
+    .mode-toggle {
+        width: min-content;
+    }
 }
 
 .mt-6 {
